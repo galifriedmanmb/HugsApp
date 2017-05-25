@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HugsApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="day_of_week_sunday">Sunday</string>
+    <string name="day_of_week_monday">Monday</string>
+    <string name="day_of_week_tusday">Tusday</string>
+    <string name="day_of_week_wednesday">Wednesday</string>
+    <string name="day_of_week_thursday">Thursday</string>
+    <string name="day_of_week_friday">Friday</string>
+    <string name="day_of_week_saturday">Saturday</string>
+
+    <string name="tab_all">all</string>
+    <string name="tab_future">future</string>
+    <string name="tab_owe">owe</string>
+</resources>

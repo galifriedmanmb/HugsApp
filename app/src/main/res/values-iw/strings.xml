@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">חוגים</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="day_of_week_sunday">ראשון</string>
+    <string name="day_of_week_monday">שני</string>
+    <string name="day_of_week_tusday">שלישי</string>
+    <string name="day_of_week_wednesday">רביעי</string>
+    <string name="day_of_week_thursday">חמישי</string>
+    <string name="day_of_week_friday">שישי</string>
+    <string name="day_of_week_saturday">שבת</string>
+
+    <string name="tab_all">הכל</string>
+    <string name="tab_future">עתידי</string>
+    <string name="tab_owe">חובה</string>
+</resources>

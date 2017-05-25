@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.gali.com.hugsapp.view.SubjectFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dataLO">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5"
+            android:id="@+id/titleLO">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/participantLO"
+                android:layout_weight="2">
+
+                <ImageView
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/participantIV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:text="יוחנן"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/participantTV"
+                    android:gravity="right|center_vertical"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="כדורסל"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/subjectNameTV"
+                android:layout_weight="3"
+                android:textSize="30sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/subjectDetailsLO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/costLO"
+                android:layout_weight="2">
+
+                <TextView
+                    android:text="220 month"
+                    android:id="@+id/costTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:text="מתנס"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/locationTV"
+                    android:gravity="right"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="3">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:id="@+id/usualDayLV" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/dataLO">
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            app:pstsShouldExpand="true"
+            app:pstsTextAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

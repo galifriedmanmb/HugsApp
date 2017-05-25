@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/singleParticipantRLO"
+    android:background="@color/cardview_shadow_start_color"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/nameTV"
+        android:gravity="center_vertical|center_horizontal"
+
+        android:background="@android:color/darker_gray" />
+
+    <apps.gali.com.hugsapp.view.MyListView
+        android:layout_width="match_parent"
+        android:id="@+id/subjectsLV"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
